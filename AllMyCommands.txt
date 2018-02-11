@@ -1,0 +1,21 @@
+ mkdir Task
+ cd Task
+ git init
+ git remote add origin https://github.com/YasmeenKeen/IndividualTask.git
+ git add *
+ git status
+ git commit -m "Three section files"
+ git ls-files
+ git push -u origin master
+ git status
+ git checkout Section3_1.txt
+ git commit -m "Three section files after restoring Section 3.1"
+ git push -u origin master
+ git checkout -b ReadMe
+ git add README.md
+ git status
+ git commit -m "Added README.md file to ReadMe branch"
+ git push -u origin ReadMe
+ git checkout master
+ git merge ReadMe
+ 
